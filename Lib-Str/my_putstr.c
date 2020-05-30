@@ -2,7 +2,7 @@
 ** claraxuxu, 2019
 ** my_putstrc
 ** File description:
-** for day07
+** out put str
 */
 
 #include "lib_str.h"

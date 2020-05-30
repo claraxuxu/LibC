@@ -2,7 +2,7 @@
 ** claraxuxu, 2019
 ** my_putchar
 ** File description:
-** for Day7
+** output a character
 */
 
 #include "lib_str.h"

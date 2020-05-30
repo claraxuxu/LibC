@@ -6,7 +6,7 @@
 */
 
 #include <unistd.h>
-#include "../../include/my.h"
+#include "../include/my.h"
 
 void rest(int num, int base)
 {

@@ -5,7 +5,7 @@
 ** get number of different base
 */
 
-int my_put_nbr(int nb);
+#include "../include/my.h"
 
 void res_dif_int(int num, int base)
 {

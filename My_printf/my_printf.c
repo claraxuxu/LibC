@@ -41,3 +41,8 @@ int my_printf(char *format,...)
     va_end(arg);
     return (0);
 }
+int main()
+{
+    my_printf("hello world"); //edit your cmd here
+    return (0);
+}

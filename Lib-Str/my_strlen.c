@@ -1,11 +1,11 @@
 /*
-** EPITECH PROJECT, 2019
+** claraxuxu, 2019
 ** my_strlen
 ** File description:
 ** count number of string
 */
 
-void my_put_nbr(int);
+#include "lib_str.h"
 
 int my_strlen(char const *str)
 {

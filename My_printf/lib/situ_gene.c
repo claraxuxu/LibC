@@ -5,10 +5,7 @@
 ** my_printf normal situations
 */
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdarg.h>
-#include "../../include/my.h"
+#include "../include/my.h"
 
 void normal_situ(char *begin, va_list arg)
 {

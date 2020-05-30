@@ -5,9 +5,7 @@
 ** for day07
 */
 
-#include <unistd.h>
-
-int my_strlen(char const *str);
+#include "../include/my.h"
 
 int my_putstr(char const *str)
 {

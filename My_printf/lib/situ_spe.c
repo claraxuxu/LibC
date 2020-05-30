@@ -5,10 +5,7 @@
 ** my_printf crazy situations
 */
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdarg.h>
-#include "../../include/my.h"
+#include "../include/my.h"
 
 void situ_hash(char *begin, va_list arg)
 {

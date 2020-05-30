@@ -4,8 +4,10 @@
 ** File description:
 ** prototypes of all the functions in lib
 */
+
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
 
 int my_strlen (char const *);
 int my_putstr(char const *);

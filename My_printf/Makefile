@@ -6,43 +6,45 @@
 ##
 
 SRC	=	my_printf.c	\
-		lib/my/situ_spe.c	\
-		lib/my/situ_gene.c	\
-		lib/my/my_putchar.c	\
-		lib/my/my_putstr.c	\
-		lib/my/my_strlen.c	\
-		lib/my/my_put_nbr.c	\
-		lib/my/my_put_usnbr.c	\
-		lib/my/my_pow.c		\
-		lib/my/get_float.c	\
-		lib/my/get_octal.c	\
-		lib/my/get_binary.c	\
-		lib/my/situx.c	\
-		lib/my/situ_x_mas.c	\
-		lib/my/res_dif_int.c	\
-		lib/my/get_hex.c
+		lib/situ_spe.c	\
+		lib/situ_gene.c	\
+		lib/my_putchar.c	\
+		lib/my_putstr.c	\
+		lib/my_strlen.c	\
+		lib/my_put_nbr.c	\
+		lib/my_put_usnbr.c	\
+		lib/my_pow.c		\
+		lib/get_float.c	\
+		lib/get_octal.c	\
+		lib/get_binary.c	\
+		lib/situx.c	\
+		lib/situ_x_mas.c	\
+		lib/res_dif_int.c	\
+		lib/get_hex.c
 
 NAME	=	my_printf
 
-NAME2	=	libmy.a
-
-OBJ	=	$(SRC:.c=.o)
+OBJ	=	$(wildcard *.o)
 
 all:	$(NAME)
 
-$(NAME):$(OBJ)
-	ar rc $(NAME2) $(OBJ)
+$(NAME):
+	gcc -c -g3 $(SRC) -Iinclude 
+	gcc -g3 -o $(NAME) *.o
+	mkdir directory
+	mv *.o directory/
 
-test:$(OBJ)
-	ar rc $(NAME2) $(OBJ)
-	gcc -o unit_test my_printf.c unit_test.c -L. -lmy -lcriterion
+# test:$(OBJ)
+# 	ar rc $(NAME2) $(OBJ)
+# 	gcc -o unit_test my_printf.c unit_test.c -L. -lmy -lcriterion
 
 clean:
+	rm -rf directory/
 	rm -f *.o
-	rm -f lib/my/*.o
+	rm -f src/*.o
 
 re: 	fclean all
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f $(NAME2)
+

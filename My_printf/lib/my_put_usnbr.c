@@ -5,8 +5,7 @@
 ** display the unsigned number given as a parameter
 */
 
-#include <unistd.h>
-#include "../../include/my.h"
+#include "../include/my.h"
 
 void my_put_usnbr(long nb)
 {

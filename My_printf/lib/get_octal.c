@@ -5,9 +5,7 @@
 ** my_printf %o
 */
 
-#include<stdlib.h>
-#include <unistd.h>
-#include "../../include/my.h"
+#include "../include/my.h"
 
 void get_octal(int num)
 {

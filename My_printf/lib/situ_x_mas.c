@@ -2,14 +2,12 @@
 ** EPITECH PROJECT, 2019
 ** my_situx
 ** File description:
-** my printf situation %x
+** my printf situation %X
 */
 
-#include <unistd.h>
-#include <stdarg.h>
-#include "../../include/my.h"
+#include "../include/my.h"
 
-void x_count(char count, int val2, char ch)
+void x_count1(char count, int val2, char ch)
 {
     while (count) {
         ch = val2 / my_pow(16, count - 1);
@@ -17,27 +15,27 @@ void x_count(char count, int val2, char ch)
         if (ch <= 9)
             my_putchar(ch + '0');
         else
-            my_putchar(ch - 10 + 'a');
+            my_putchar(ch - 10 + 'A');
         count--;
     }
 }
 
-void situ_x(va_list arg)
+void situ_x_mas(va_list arg)
 {
-    int val;
-    int val2;
+    int v;
+    int q;
     char count;
     char ch;
     int res = 0;
 
-    val = va_arg(arg, int); 
-    val2 = val;
+    v = va_arg(arg, int);
+    q = v;
     count = 0;
-    while (val2) {
+    while (q) {
         count++;
-        val2 /= 16;
+        q /= 16;
     }
     res += count;
-    val2 = val;
-    x_count(count,val2,ch);
+    q = v;
+    x_count1(count,q,ch);
 }

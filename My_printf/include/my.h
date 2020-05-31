@@ -11,6 +11,7 @@
 
 int my_strlen (char const *);
 int my_putstr(char const *);
+int my_put_nbr(int nb)；
 void my_put_usnbr(long nb);
 void my_putchar(char);
 unsigned long my_pow(int a, int b);
@@ -25,4 +26,3 @@ void get_float(double f);
 
 void situ_gene(char *begin, va_list arg);
 void situ_special(char *begin, va_list arg);
-
